@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "BCDEV1805",
+            "server": "https://bcdev1805.westeurope.cloudapp.azure.com",
+            "tenant": "default",
+            "serverInstance": "NAV",
+            "authentication": "UserPassword",
+            "startupObjectId": 22,
+            "startupObjectType": "Page"
+        }
+    ]
+}
