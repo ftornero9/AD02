@@ -10,7 +10,7 @@ table 50100 "AI Supported Language"
             Caption = 'AI Language Code';
         }
 
-        field(2;Description; Text[10])
+        field(2;Description; Text[50])
         {
             
             Caption = 'Description';

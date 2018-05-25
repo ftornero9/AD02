@@ -11,21 +11,6 @@ pageextension 50102 AILanguagePage extends "Sales Order"
                 ApplicationArea = All;
             } 
         }
-        modify("Sell-to Customer No.")
-        {
-            trigger OnAfterValidate()
-                var 
-                    Customer:Record Customer;
-                    Language:Record Language;
-                begin
-                    if Customer.Get("Sell-to Customer No.") then begin
-                       if Customer."Language Code" <> '' then begin
-                           if Language.Get(Customer."Language Code") then
-                             "AI Language" := Language."AI Language";
-                       end;
-                    end;
-                end;   
-        }
     }
     
     actions

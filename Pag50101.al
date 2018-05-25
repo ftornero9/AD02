@@ -31,6 +31,8 @@ page 50101 "AI Translator Service Setup"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                Image = Language;
+                RunObject = page "AI Supportes Languages List";
        
                 trigger OnAction()
                 begin
