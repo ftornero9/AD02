@@ -14,6 +14,11 @@ table 50101 "AI Translator Service Setup"
             
             DataClassification = ToBeClassified;
         }        
+        field(3;"Azure Key"; Text[250])
+        {
+            Caption = 'Azure Key';
+            DataClassification = ToBeClassified;
+        }           
     }
     
     keys
@@ -45,5 +50,15 @@ table 50101 "AI Translator Service Setup"
     begin
         
     end;
-    
+
+
+    procedure InsertIfNotExists()
+
+    begin
+        Reset();
+        if Not Get() then begin
+            Init();
+            Insert();
+        end;   
+    end;    
 }
